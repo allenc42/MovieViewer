@@ -2,11 +2,13 @@ import { useEffect, useState } from "react";
 import './App.css'; 
 import MovieSort from './MovieSort.js';
 //API key
+
+const apiKey = process.env.API_KEY
 const options = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: process.env.API_KEY
+      Authorization: apiKey
     }
   }; 
 
