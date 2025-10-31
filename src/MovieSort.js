@@ -25,7 +25,7 @@ function MovieSort({selectionOption, moviesInfo}) {
                 <p className="title" key={index}> {movie.title} </p>
                 <p className="release" key={index}>Release Date: {movie.release_date}</p>
                 <p className="font" key={index}> Rating: {movie.vote_average}</p>
-        </div>
+                </div>
             ))}
     </div>)
 }
