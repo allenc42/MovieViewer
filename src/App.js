@@ -36,7 +36,7 @@ function App() {
     <div>
       <h1 id="header">Movie Explorer</h1>
       <h2 id="header2">
-        <input className="inputBoxes" type="text" placeholder=" Search for a movie..." id="search" onChange={handleInput}/>
+        <input className="inputBoxes" type="text" placeholder=" Search for a movie..." onChange={handleInput}/>
         <select id="movieInfo" className="inputBoxes" onChange ={handleSelect}>
             <option>Sort By</option>
             <option value="release_date.asc">Release Date (Asc)</option>
