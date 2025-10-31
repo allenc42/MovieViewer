@@ -16,7 +16,7 @@ function MovieDisplay({pageNumber, inputText, selectionOption, setTotalPages}) {
     let url = `https://api.themoviedb.org/3/movie/popular?language=en-US&page=${pageNumber}`;
 
 
-    //Updates url everytime page and search textbox changes 
+    //Updates url everytime page and search textbox changes
     useEffect(()=> {
         if(inputText !== "") {
            url = `https://api.themoviedb.org/3/search/movie?query=${inputText}
@@ -30,7 +30,7 @@ function MovieDisplay({pageNumber, inputText, selectionOption, setTotalPages}) {
             setTotalPages(res.total_pages);
         })
         .catch(err => console.error(err));
-    }, [pageNumber, inputText])
+    }, [pageNumber, inputText, selectionOption])
 
     return (
         <div>
