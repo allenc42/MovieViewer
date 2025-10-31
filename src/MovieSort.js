@@ -22,9 +22,9 @@ function MovieSort({selectionOption, moviesInfo}) {
             {moviesInfo.map((movie, index) => (
                 <div className="box">
                 <img className="posterSize" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}></img>
-                <p className="title" key={index}> {movie.title} </p>
-                <p className="release" key={index}>Release Date: {movie.release_date}</p>
-                <p className="font" key={index}> Rating: {movie.vote_average}</p>
+                <p className="title"> {movie.title} </p>
+                <p className="release">Release Date: {movie.release_date}</p>
+                <p className="font"> Rating: {movie.vote_average}</p>
                 </div>
             ))}
     </div>)
