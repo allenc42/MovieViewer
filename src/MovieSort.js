@@ -1,6 +1,8 @@
 import './App.css';
 
 function MovieSort({selectionOption, moviesInfo}) {
+
+    //Sort by score and reelease date
     if(selectionOption === "vote_average.asc") {
         moviesInfo.sort(function(a,b) {return a.vote_average - b.vote_average});
     }
@@ -15,6 +17,7 @@ function MovieSort({selectionOption, moviesInfo}) {
     }
 
     return (
+        //Creates the actual display
         <div className ="container">
             {moviesInfo.map((movie, index) => (
                 <div className="box">

@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import './App.css'; 
 import MovieSort from './MovieSort.js';
 //API key
-
 const options = {
     method: 'GET',
     headers: {

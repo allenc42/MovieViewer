@@ -53,8 +53,7 @@ function App() {
         <p id="GetPageNumber" className="pageNumber">Page {pageNumber} of {totalPages}</p>
         <button id="nextButton" className="blueButtons" onClick ={handleNext}>Next</button>
     </div>
-
-
+    
     </div>
   );
 }
