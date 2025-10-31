@@ -38,7 +38,7 @@ function App() {
       <h2 id="header2">
         <input className="inputBoxes" type="text" placeholder=" Search for a movie..." onChange={handleInput}/>
         <select className="inputBoxes" onChange ={handleSelect}>
-            <option>Sort By</option>
+            <option value="sortBy">Sort By</option>
             <option value="release_date.asc">Release Date (Asc)</option>
             <option value="release_date.desc">Release Date (Desc)</option>
             <option value="vote_average.asc">Rating (Asc)</option>
