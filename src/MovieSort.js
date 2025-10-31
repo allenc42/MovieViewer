@@ -19,7 +19,7 @@ function MovieSort({selectionOption, moviesInfo}) {
     return (
         //Creates the actual display
         <div className ="container">
-            {moviesInfo.map((movie, index) => (
+            {moviesInfo.map((movie) => (
                 <div className="box">
                 <img className="posterSize" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}></img>
                 <p className="title"> {movie.title} </p>
